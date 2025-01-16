@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Profile - Soccer{% endblock %}
+
+{% block content %}
+<div class="profile-container">
+    <!-- Banner Section -->
+    <div class="profile-banner">
+        <div class="banner-content">
+            <div class="profile-picture">
+                <!-- Default profile image, replace src with actual user image -->
+                <img src="{{ url_for('static', filename='images/default-profile.png') }}" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1>LeBron James</h1>
+                <p class="profile-stats">
+                    <span>150 Matches Rated</span>
+                    <span>•</span>
+                    <span>42 Reviews</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activity Section -->
+    <div class="profile-content">
+        <div class="activity-section">
+            <h2>Recent Activity</h2>
+            
+            <!-- Sample Match Rating Card -->
+            <div class="rating-card">
+                <div class="match-info">
+                    <h3>Manchester United vs Liverpool</h3>
+                    <span class="match-date">March 19, 2025</span>
+                </div>
+                <div class="rating-details">
+                    <div class="star-rating">
+                        ★★★★☆
+                        <span class="rating-value">4.0</span>
+                    </div>
+                    <p class="rating-comment">
+                        "wow what a match"
+                    </p>
+                </div>
+            </div>
+
+            <!-- Another Sample Rating -->
+            <div class="rating-card">
+                <div class="match-info">
+                    <h3>Real Madrid vs Barcelona</h3>
+                    <span class="match-date">March 15, 2025</span>
+                </div>
+                <div class="rating-details">
+                    <div class="star-rating">
+                        ★★★★★
+                        <span class="rating-value">5.0</span>
+                    </div>
+                    <p class="rating-comment">
+                        "cool"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
